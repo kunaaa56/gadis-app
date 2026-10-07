@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masuk - GADIS</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>GADIS</h1>
+    <p class="tagline">Simple Care for Every Her</p>
+  </header>
+
+  <main class="content">
+    <div class="greeting">
+      <h2>Masuk ke akunmu</h2>
+      <p>biar bisa cari teman & simpan datamu</p>
+    </div>
+
+    <form id="loginForm" class="auth-form">
+      <input type="email" id="loginEmail" placeholder="Email" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <p id="loginError" class="error-text"></p>
+      <button type="submit" class="btn-primary">Masuk</button>
+    </form>
+
+    <p class="switch-text">Belum punya akun? <a href="register.html">Daftar di sini</a></p>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>

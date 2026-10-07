@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daftar - GADIS</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>GADIS</h1>
+    <p class="tagline">Simple Care for Every Her</p>
+  </header>
+
+  <main class="content">
+    <div class="greeting">
+      <h2>Buat akun baru</h2>
+      <p>mulai perjalanan sehatmu bareng GADIS</p>
+    </div>
+
+    <form id="registerForm" class="auth-form">
+      <input type="text" id="regName" placeholder="Nama" required>
+      <input type="email" id="regEmail" placeholder="Email" required>
+      <input type="password" id="regPassword" placeholder="Password (min. 6 karakter)" required minlength="6">
+      <p id="registerError" class="error-text"></p>
+      <button type="submit" class="btn-primary">Daftar</button>
+    </form>
+
+    <p class="switch-text">Sudah punya akun? <a href="login.html">Masuk di sini</a></p>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="register.js"></script>
+</body>
+</html>
